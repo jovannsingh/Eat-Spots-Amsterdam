@@ -25,21 +25,24 @@
         </nav>
     </section>
 
-    <!---JavaScript voor Hamburger Menu-->
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script> 
-
  <main>
-    <div class="heading"><b> LEAVE </b>REVIEW</div>
+    <section class="main-section"> 
+     <div class="heading"><b> LEAVE </b>REVIEW</div>
+     <p class="text-toprated">Just visited a restaurant or a cafe from our list? Write your review and share your experiences with our community. Choose a restaurant below to get started.</p>
+    </section>
+
+    <div class="select">
+        <select name="format" id="format">
+            <option selected disabled>CHOOSE A EAT SPOT</option>
+            <option value="MERAM RESTAURANT">MERAM RESTAURANT</option>
+            <option value="MERAM RESTAURANT">MERAM RESTAURANT</option>
+            <option value="MERAM RESTAURANT">MERAM RESTAURANT</option>
+            <option value="MERAM RESTAURANT">MERAM RESTAURANT</option>
+            <option value="MERAM RESTAURANT">MERAM RESTAURANT</option>
+            <option value="MERAM RESTAURANT">MERAM RESTAURANT</option>
+        </select>
+    </div>
+
    <div class="container-2">
        <div class="star-widget">
        <input type="radio" name="rate" id="rate-5">
@@ -64,6 +67,46 @@
      </div>  
    </div> 
  </main>
+
+ <footer>
+    <div class="socials-footer">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fas fa-globe"></i></a>
+   </div>
+
+   <ul class="list">
+       <li>
+          <a href="#">HOME</a> 
+       </li>
+       <li>
+           <a href="#">TOP RATED</a> 
+        </li>
+        <li>
+           <a href="#">NEAR ME</a> 
+        </li>
+        <li>
+           <a href="#">MY REVIEWS</a> 
+        </li>
+   </ul>
+   <p class="copyright">
+       MADE MY JOVAN SINGH © 2021
+   </p>
+</footer>
+
+
+<!---JavaScript voor Hamburger Menu-->
+<script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+</script> 
+
 
 </body>
 </html>

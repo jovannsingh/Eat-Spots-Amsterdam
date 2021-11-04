@@ -9,32 +9,62 @@
     <script src="https://kit.fontawesome.com/5f249cc652.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <section class="header">
-         <nav>
-             <a href="index.html"><img src="/images/words-of-wisdom-logo.png"></a>
-             <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
-                 <ul>
-                     <li><a href="index.html">HOME</a></li>
-                     <li><a href="toprated.html">TOP RATED</a></li>
-                     <li><a href="">NEAR ME</a></li>
-                     <li><a href="review.html">MY REVIEWS</a></li>
-                 </ul>
-             </div>
-             <i class="fas fa-bars" onclick="showMenu()"></i>
-         </nav>
-        </section>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/images/words-of-wisdom-logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="toprated.html">TOP RATED</a></li>
+                    <li><a href="">NEAR ME</a></li>
+                    <li><a href="review.html">MY REVIEWS</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
 
-        <div class="text-box">
-          <h1>WELCOME TO EAT SPOTS AMSTERDAM</h1>
-          <p>YOUR INTERNATIONAL STUDENT GUIDE FOR FINDING RESTAURANTS AND CAFETARIAS LOCATIONS IN AMSTERDAM.</p>
-           <button class="btn-1">TOP RATED</button>
-           <button class="btn-1">NEAR ME</button>
-        </div> 
-     
 
-    <!---JavaScript voor Hamburger Menu-->
-    <script>
+
+ <main>
+   <section class="main-section"> 
+    <div class="text-box">
+        <h1>WELCOME TO EAT SPOTS AMSTERDAM</h1>
+        <p>YOUR INTERNATIONAL STUDENT GUIDE FOR FINDING RESTAURANTS AND CAFETARIAS LOCATIONS IN AMSTERDAM.</p>
+         <a href="toprated.html"><button class="btn-1">TOP RATED</button></a>
+         <a href="#"><button class="btn-1">NEAR ME</button></a>
+      </div> 
+    </section>
+ </main>
+
+ <footer>
+     <div class="socials-footer">
+     <a href="#"><i class="fab fa-instagram"></i></a>
+     <a href="#"><i class="fas fa-globe"></i></a>
+    </div>
+
+    <ul class="list">
+        <li>
+           <a href="#">HOME</a> 
+        </li>
+        <li>
+            <a href="#">TOP RATED</a> 
+         </li>
+         <li>
+            <a href="#">NEAR ME</a> 
+         </li>
+         <li>
+            <a href="#">MY REVIEWS</a> 
+         </li>
+    </ul>
+    <p class="copyright">
+        MADE MY JOVAN SINGH © 2021
+    </p>
+ </footer>
+
+     <!---JavaScript voor Hamburger Menu-->
+     <script>
         var navLinks = document.getElementById("navLinks");
         
         function showMenu(){
@@ -45,5 +75,6 @@
             navLinks.style.right = "-200px";
         }
     </script> 
+
 </body>
 </html>

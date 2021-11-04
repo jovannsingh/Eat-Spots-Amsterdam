@@ -5,6 +5,8 @@
     font-family: 'Prompt', sans-serif;
 }
 
+ /* Code voor hele body op alle pages*/
+
 body{
     background-image: linear-gradient(380deg, #0575E6, #021B79, #005C97, #363795, #C02425);
     animation: bganimation 5s infinite;
@@ -12,10 +14,7 @@ body{
     background-size: 400%;
 }
 
-.header{
-    width: 100%;
-}
-
+ /* Code voor achtergrond animatie*/
 
 @keyframes bganimation {
   0%{
@@ -29,7 +28,79 @@ body{
   100%{
      background-position: 0%, 50%;
   }
-  
+}
+
+ /* Code voor Footer*/
+
+footer{
+ font-family: 'Prompt', sans-serif;
+ font-weight: 200;
+ background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+ padding: 40px 0;
+}
+
+.socials-footer{
+ text-align: center;
+ padding-bottom: 25px;
+ color: black;
+}
+
+.socials-footer a{
+ font-size: 24px;
+ color: inherit;
+ border: 1px solid black;
+ width: 40px;
+ height: 40px;
+ line-height: 38px;
+ display: inline-block;
+ text-align: center;
+ border-radius: 50%;
+ margin: 0 8px;
+ opacity: 0.75;
+}    
+
+.socials-footer a:hover{
+ opacity: 0.9;    
+}
+
+footer ul{
+ margin-top: 0;
+ padding: 0;
+ list-style: none;
+ font-style: 18px;
+ line-height: 1.6;
+ margin-bottom: 0;
+ text-align: center;
+}
+
+footer ul li a{
+ color: inherit;
+ text-decoration: none;     
+ opacity: 0.8;
+}
+
+footer ul li{
+ display: inline-block;
+ padding: 0 15px;
+}
+
+footer ul li a:hover{
+ opacity: 1;
+}
+
+.copyright{
+ margin-top: 15px;
+ text-align: center;
+ font-size: 13px;
+ color: black;
+}
+
+
+ /* Code voor Header en Nav*/
+
+.header{
+    width: 100%;
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
 }
 
 nav{
@@ -75,11 +146,14 @@ nav img{
     width: 100%; 
 }
 
+ /* Code voor Tekst en buttons op home pagina*/
+
+
 .text-box{
     width: 90%;
     color: white;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -98,7 +172,7 @@ nav img{
 }
 
 .btn-1{
-    background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
@@ -123,6 +197,18 @@ nav .fas{
     display: none;
 }
 
+.text-toprated{
+    margin: 10px 0 40px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 4%;
+}
+
+
+ /* Code voor class main-section op alle pagina's*/
+
+
 .main-section{
     position: relative;
     min-height: 100vh;
@@ -144,6 +230,9 @@ nav .fas{
 section .heading b{
  color: white;
 }
+
+ /* Code voor grid list op top rated pagina*/
+
 
 .wrapper{
  width: 100%;
@@ -242,8 +331,65 @@ h2{
  background: white;
 }    
 
- /* Code voor Reviews form*/
+ /* Code voor select section op Reviews pagina*/
 
+main .select{
+ top: -550px;
+ margin: auto
+}
+
+select{
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ -ms-appearance: none;
+ appearance: none;
+ outline: 0;
+ box-shadow: none;
+ border: 0!important;
+ background: #5c6664;
+ background-image: none;
+}
+
+select::-ms-expand{
+ display: none;    
+}
+
+.select{
+ position: relative;
+ display: flex;
+ width: 20em;
+ height: 3em;    
+ line-height: 3;
+ background: #5c6664;
+ border-radius: .25em;
+}
+
+select{
+ flex: 1;
+ padding: 0.5em;
+ color: #fff;
+ cursor: pointer;  
+ font-size: 1em;
+}
+
+.select::after{
+ content: '\25BC';
+ position: absolute;
+ top: 0;
+ right: 0;
+ padding: 0 1em;
+ background: #ff4b81;
+ cursor: pointer;
+ pointer-events: none;
+ transition: 25s all ease;
+}
+
+.select:hover::after{
+ color: #ff4b81;
+}
+
+ /* Code voor Reviews form*/
+ 
 .container-2{
  display: grid;
  place-items: center;
@@ -284,6 +430,7 @@ input#rate-5:checked ~ label{
  color: #fe7;
  text-shadow: 0 0 20px #952;
 }
+
 
 form header{
  width: 100%;
@@ -354,6 +501,9 @@ form .btn button:hover{
         font-size: 15px;
     }
     
+    .text-toprated{
+      font-size: 15px;    
+    }
 
     .nav-links ul li{
         display: block;
@@ -387,7 +537,7 @@ form .btn button:hover{
         display: inline-block;
         position: relative;
         color: #ff4b81;
-        font-size: 50px;
+        font-size: 30px;
         width: 100%;
         text-align: center;
         font-weight: 800;
@@ -398,7 +548,7 @@ form .btn button:hover{
       height: 300px;
       margin: auto;
       position: relative;
-      top: 197px;
+      top: -530px;
       display: flex;
       align-items: center;
       justify-content: center;
